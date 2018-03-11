@@ -95,7 +95,7 @@ fars_summarize_years <- function(years) {
 #'listed above also apply here.
 #'@note The state.num must exist in the dataset.  If it does not an error will appear reading "invalid STATE number: "
 #'@importFrom dplyr filter
-#'@importFrom maps map range
+#'@importFrom maps map
 #'@importFrom graphics points
 #'@examples
 #'fars_map_state(28,2013)
