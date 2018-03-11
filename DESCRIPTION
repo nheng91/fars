@@ -1,7 +1,7 @@
 Package: fars
 Title: US National Highway Traffic Safety Administration's Fatality Analysis Reporting System Data
 Version: 0.1.0
-Author: Nate Heng
+Authors@R: person("John","Doe", role = c("aut","cre"), email = "John.Doe@email.com")
 Description: The fars package manipulates US National Highway Traffic Safety Administration's Fatality Analysis Reporting System data for the years 2013-2015.
 Depends: R (>= 3.4.2)
 License: GPL (>= 2)
