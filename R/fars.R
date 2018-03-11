@@ -40,7 +40,8 @@ make_filename <- function(year) {
 #'@source US National Highway Traffic Safety Administration's Fatality Analysis Reporting System \url{https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)}
 #'@note If a year is input in which a corresponding file does not exist in the working directory, and error will occur.
 #'@note Please make sure the csv files and R script are in the same directory, and that directory is the current working directory.
-#'@importFrom dplyr %>% mutate select
+#'@importFrom dplyr mutate select
+#'@importFrom magrittr %>%
 #'@examples
 #'fars_read_years(2013)
 #'fars_read_years(c(2013,2014))
@@ -69,7 +70,8 @@ fars_read_years <- function(years) {
 #'@source US National Highway Traffic Safety Administration's Fatality Analysis Reporting System \url{https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)}
 #'@note The function directly calls the fars_read_years() function, and indirectly calls the make_filename() and fars_read() functions
 #'so the same notes listed for those functions apply here.
-#'@importFrom dplyr %>% bind_rows group_by summarize
+#'@importFrom dplyr bind_rows group_by summarize
+#'@importFrom magrittr %>%
 #'@importFrom tidyr spread
 #'@examples
 #'fars_summarize_years(2013)
