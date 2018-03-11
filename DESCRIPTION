@@ -1,15 +1,17 @@
 Package: fars
-Type: Package
-Title: What the Package Does (Title Case)
+Title: US National Highway Traffic Safety Administration's Fatality Analysis Reporting System Data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Nate Heng
+Maintainer: nheng91@gmail.com
+Description: The fars package manipulates US National Highway Traffic Safety Administration's Fatality Analysis Reporting System
+data for the years 2013-2015.
+Depends: R (>= 3.4.2)
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 Suggests: knitr,
-    rmarkdown
+    rmarkdown,
+    testthat
 VignetteBuilder: knitr
+Imports: dplyr, magrittr, readr, tidyr, maps, graphics
