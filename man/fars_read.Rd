@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars.R
 \name{fars_read}
 \alias{fars_read}
-\title{This function imports a specified csv file and returns a dataframe.  It also checks to see if the file exists.}
+\title{Read fars data in to R.}
 \usage{
 fars_read(filename)
 }

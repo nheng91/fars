@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars.R
 \name{fars_map_state}
 \alias{fars_map_state}
-\title{This function creates a map of observations (fatal accidents) that have occurred in a given state during a specified year.}
+\title{Create fatality map.}
 \source{
 US National Highway Traffic Safety Administration's Fatality Analysis Reporting System \url{https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)}
 }

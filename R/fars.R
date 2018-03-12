@@ -1,3 +1,5 @@
+#'Read fars data in to R.
+#'
 #'This function imports a specified csv file and returns a dataframe.  It also checks to see if the file exists.
 #'
 #'@param filename The csv file, or file path, that is imported and manipulated into a dataframe.
@@ -18,7 +20,9 @@ fars_read <- function(filename) {
   dplyr::tbl_df(data)
 }
 
-#'This function creates a character string that can be used as the name of a file with the format "accident_%d.csv.bz2"
+#'Create filename in R.
+#'
+#'This function creates a character string that can be used as the name of a file for other functions in this package.
 #'
 #'@param year the year that will be included in the string output
 #'@return The function will return the following string: "accident_year.csv.bz2".  'year' is the parameter value entered.
@@ -31,6 +35,8 @@ make_filename <- function(year) {
   sprintf("accident_%d.csv.bz2", year)
 }
 
+#'Create fars dataframes.
+#'
 #'This function creates n data frames of months and years.  The months will vary within each data frame, but the year will remain constant.
 #'n will vary with the number of years input.
 #'
@@ -63,6 +69,8 @@ fars_read_years <- function(years) {
   })
 }
 
+#'Summarize fars data.
+#'
 #'This function will create a dataframe with n columns and 12 rows.  The columns represent the years input
 #'as a parameter and the rows represent the 12 months of the year.  The values within the data frame
 #'represent the total number of observations found for each month/year combination.
@@ -90,6 +98,8 @@ fars_summarize_years <- function(years) {
     dplyr::summarize(n = n()) %>%
     tidyr::spread(year, n)
 }
+#'Create fatality map.
+#'
 #'This function creates a map of observations (fatal accidents) that have occurred in a given state during a specified year.
 #'
 #'@return The function returns a map of the specified state and the location of each observation (fatality) using longitute and latitude.

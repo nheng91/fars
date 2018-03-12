@@ -2,8 +2,7 @@
 % Please edit documentation in R/fars.R
 \name{fars_read_years}
 \alias{fars_read_years}
-\title{This function creates n data frames of months and years.  The months will vary within each data frame, but the year will remain constant.
-n will vary with the number of years input.}
+\title{Create fars dataframes.}
 \source{
 US National Highway Traffic Safety Administration's Fatality Analysis Reporting System \url{https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)}
 }

@@ -2,9 +2,7 @@
 % Please edit documentation in R/fars.R
 \name{fars_summarize_years}
 \alias{fars_summarize_years}
-\title{This function will create a dataframe with n columns and 12 rows.  The columns represent the years input
-as a parameter and the rows represent the 12 months of the year.  The values within the data frame
-represent the total number of observations found for each month/year combination.}
+\title{Summarize fars data.}
 \source{
 US National Highway Traffic Safety Administration's Fatality Analysis Reporting System \url{https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)}
 }

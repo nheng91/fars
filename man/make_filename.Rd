@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars.R
 \name{make_filename}
 \alias{make_filename}
-\title{This function creates a character string that can be used as the name of a file with the format "accident_%d.csv.bz2"}
+\title{Create filename in R.}
 \source{
 US National Highway Traffic Safety Administration's Fatality Analysis Reporting System \url{https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)}
 }
@@ -16,7 +16,7 @@ make_filename(year)
 The function will return the following string: "accident_year.csv.bz2".  'year' is the parameter value entered.
 }
 \description{
-This function creates a character string that can be used as the name of a file with the format "accident_%d.csv.bz2"
+This function creates a character string that can be used as the name of a file for other functions in this package.
 }
 \examples{
 make_filename(2013)
